@@ -48,3 +48,18 @@ View(metadata)
 #??str
 str(metadata)
 mean(metadata$genome_size) #calculating the mean.
+## {r Set the seed, include=TRUE, echo=TRUE, eval = TRUE}
+set.seed() # Insert your random number here - NOTE:  Only do this once when you are initalizing your file!
+## {r Import Data, echo = TRUE, eval = TRUE}
+metadata <- read.csv('data/Ecoli_metadata.csv') # Load in the data from the data directory!
+head(metadata) # This will show us the first 6 rows of the dataframe
+str(metadata) # This will show us the structure of the data
+mean(metadata$genome_size) # Calculate the mean genome_size
+## end chunk 2
+## {r package import, echo = TRUE, eval = TRUE}
+install.packages("ggplot2") # Install the best plotting package in R
+library(ggplot2) # Make sure R knows to source from it
+## end chunk 3
+install.package("ggplot2")
+'''
+install.package("ggplot2")

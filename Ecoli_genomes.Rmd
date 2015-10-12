@@ -25,3 +25,26 @@ Here I'm workign with the data carpentry ecoli genomes data set. I found it at t
 '''{r set seed, echo = TRUE, eval=TRUE}
 set.seed(78153331)
 '''
+
+
+
+
+Below I am importing the **ecoli data** from our data folder.
+'''{r Import Data, echo = TRUE, eval = TRUE}
+metadata <- read.csv('Bioinformatics_reproducibility/Data/Ecoli_metadata.csv') # reading in my data file into an object named metadata.
+View(metadata) #looking at the table within R
+str()
+?str #get help on str
+??str #all help pages with str in it
+'''
+'''{r Import Data, echo = TRUE, eval = TRUE}
+metadata <- read.csv('Bioinformatics_reproducibility/Data/Ecoli_metadata.csv')
+''''''{r Import Data, echo = TRUE, eval = TRUE}
+'''{r Import Data, echo = TRUE, eval = TRUE}
+metadata <- read.csv('Data/Ecoli_metadata.csv')
+View(metadata)
+#str()
+#?str
+#??str
+str(metadata)
+mean(metadata$genome_size) #calculating the mean.
